@@ -1,48 +1,29 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Footer } from "~/components/footer";
+import { Header } from "~/components/header";
+import { CtaSection } from "~/sections/homepage/cta-section";
+import { HomeIntroSection } from "~/sections/homepage/intro-section";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    {
+      title: "Sunny Pizza & Pinsa, Stuttgart | Indian Pizza & Pinsa to Takeout",
+    },
+    {
+      name: "description",
+      content:
+        "Combining the rich traditions of Italian cuisine with the fragrant spices of India, we specialise in a variety of classical favourites such as Pizza, Pinsa and Pasta, all with an Indian twist",
+    },
   ];
 };
 
 export default function Index() {
   return (
-    <div className="font-sans p-4">
-      <h1 className="text-3xl">Welcome to Remix</h1>
-      <ul className="list-disc mt-4 pl-6 space-y-2">
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/quickstart"
-            rel="noreferrer"
-          >
-            5m Quick Start
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/tutorial"
-            rel="noreferrer"
-          >
-            30m Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/docs"
-            rel="noreferrer"
-          >
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <main className="flex flex-col font-sans bg-gradient-to-br from-slate-100 to-slate-200 min-h-screen">
+      <Header />
+      <HomeIntroSection className="my-12" />
+      <CtaSection />
+      <Footer />
+    </main>
   );
 }
