@@ -10,9 +10,45 @@ export const meta: MetaFunction = () => {
       title: "Sunny Pizza & Pinsa, Stuttgart | Indian Pizza & Pinsa to Takeout",
     },
     {
+      property: "og:title",
+      content:
+        "Sunny Pizza & Pinsa, Stuttgart | Indian Pizza & Pinsa to Takeout",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:description",
+      content:
+        "Combining the rich traditions of Italian cuisine with the fragrant spices of India, we specialise in a variety of classical favourites such as Pizza, Pinsa and Pasta, all with an Indian twist",
+    },
+    {
+      tagName: "link",
+      rel: "canonical",
+      href: "https://www.sunnypizzastuttgart.com",
+    },
+    {
       name: "description",
       content:
         "Combining the rich traditions of Italian cuisine with the fragrant spices of India, we specialise in a variety of classical favourites such as Pizza, Pinsa and Pasta, all with an Indian twist",
+    },
+    {
+      property: "og:image",
+      content:
+        "https://sunnypizzastuttgart.com/assets/images/sunny-pizza-stuttgart-logo-bg.jpg",
+    },
+    {
+      property: "og:image:width",
+      content: "1024",
+    },
+    {
+      property: "og:image:height",
+      content: "1024",
+    },
+    {
+      property: "og:locale",
+      content: "en_GB",
     },
     {
       "script:ld+json": {
@@ -29,7 +65,7 @@ export const meta: MetaFunction = () => {
           addressCountry: "DE",
         },
         image:
-          "https://sunnypizzastuttgart.com/assets/images/sunny-pizza-logo.png",
+          "https://sunnypizzastuttgart.com/assets/images/sunny-pizza-stuttgart-logo-bg.jpg",
         telephone: "07112384788",
         email: "sunny-singh@hotmail.de",
         url: "https://sunnypizzastuttgart.com",
@@ -39,7 +75,7 @@ export const meta: MetaFunction = () => {
         paymentAccepted: ["Cash", "Credit Card"],
         keywords: ["Pizza", "Pinsa", "Stuttgart", "Takeout"],
         priceRange: "$$",
-        logo: "https://sunnypizzastuttgart.com/assets/images/sunny-pizza-logo.png",
+        logo: "https://sunnypizzastuttgart.com/assets/images/sunny-pizza-stuttgart-logo-bg.jpg",
         openingHoursSpecification: [
           {
             "@type": "OpeningHoursSpecification",
