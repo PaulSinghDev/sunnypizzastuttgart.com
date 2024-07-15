@@ -32,7 +32,7 @@ export function CtaSection({ className }: { className?: string }) {
               className="grow text-white min-w-[150px] max-w-[200px] bg-slate-800 inline-flex gap-2 items-center"
               size={"md"}
               variant={"button"}
-              href="/"
+              href="/assets/menus/sunny-pizza-menu.pdf"
               title=""
             >
               <Icons.menu size={15} />
@@ -42,8 +42,8 @@ export function CtaSection({ className }: { className?: string }) {
               size={"md"}
               variant={"button"}
               className="grow bg-slate-800 text-white min-w-[150px] max-w-[200px] inline-flex gap-2 items-center"
-              href="/"
-              title=""
+              href="tel:07112384788"
+              title="Call us"
             >
               <Icons.phone size={15} />
               Call Us

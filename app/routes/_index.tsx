@@ -14,6 +14,54 @@ export const meta: MetaFunction = () => {
       content:
         "Combining the rich traditions of Italian cuisine with the fragrant spices of India, we specialise in a variety of classical favourites such as Pizza, Pinsa and Pasta, all with an Indian twist",
     },
+    {
+      "script:ld+json": {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        description:
+          "Combining the rich traditions of Italian cuisine with the fragrant spices of India, we specialise in a variety of classical favourites such as Pizza, Pinsa and Pasta, all with an Indian twist",
+        name: "Sunny Pizza & Pinsa",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Eugenstraße 12",
+          addressLocality: "Stuttgart-Mitte",
+          postalCode: "70182",
+          addressCountry: "DE",
+        },
+        image:
+          "https://sunnypizzastuttgart.com/assets/images/sunny-pizza-logo.png",
+        telephone: "07112384788",
+        email: "sunny-singh@hotmail.de",
+        url: "https://sunnypizzastuttgart.com",
+        hasMenu:
+          "https://sunnypizzastuttgart.com/assets/menus/sunny-pizza-menu.pdf",
+        servesCuisine: "Italian",
+        paymentAccepted: ["Cash", "Credit Card"],
+        keywords: ["Pizza", "Pinsa", "Stuttgart", "Takeout"],
+        priceRange: "$$",
+        logo: "https://sunnypizzastuttgart.com/assets/images/sunny-pizza-logo.png",
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: [
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+            ],
+            opens: "17:00:00",
+            closes: "23:00:00",
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Sunday"],
+            opens: "12:00:00",
+            closes: "23:00:00",
+          },
+        ],
+      },
+    },
   ];
 };
 

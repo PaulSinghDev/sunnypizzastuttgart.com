@@ -34,7 +34,7 @@ export function Header() {
             className="grow text-white min-w-[150px] max-w-[200px] bg-slate-600 inline-flex gap-2 items-center"
             size={"md"}
             variant={"button"}
-            href="/sunny-pizza-menu.pdf"
+            href="/assets/menus/sunny-pizza-menu.pdf"
             title="View our menu"
             rel="noopener noreferrer"
             target="_blank"
