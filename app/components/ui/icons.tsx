@@ -1,10 +1,18 @@
-import { BookOpenText, House, MapPin, PhoneCall, Star } from "lucide-react";
+import {
+  BookOpenText,
+  House,
+  MapPin,
+  Menu,
+  PhoneCall,
+  Star,
+} from "lucide-react";
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   star: Star,
   menu: BookOpenText,
+  burger: Menu,
   pin: MapPin,
   address: House,
   phone: PhoneCall,

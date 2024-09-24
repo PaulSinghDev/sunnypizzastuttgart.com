@@ -3,7 +3,7 @@ import { Icons } from "../ui/icons";
 
 export function Footer() {
   return (
-    <footer className="px-8 py-12 text-white bg-gray-800 mt-24">
+    <footer className="px-8 py-12 text-white bg-gray-800">
       <div className="max-w-content mx-auto flex flex-col">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-20 gap-y-8 self-center w-full justify-items-center">
           <div className="w-full">

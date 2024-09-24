@@ -1,19 +1,19 @@
-import type { MetaFunction } from "@remix-run/node";
+import { MetaFunction } from "@remix-run/node";
 import { Footer } from "~/components/footer";
 import { Header } from "~/components/header";
 import { NavigationMenu } from "~/components/navigation-menu";
-import { CtaSection } from "~/sections/homepage/cta-section";
-import { HomeIntroSection } from "~/sections/homepage/intro-section";
+import { AnchorLink } from "~/components/ui/anchor-link";
 
 export const meta: MetaFunction = () => {
   return [
     {
-      title: "Sunny Pizza & Pinsa, Stuttgart | Indian Pizza & Pinsa to Takeout",
+      title:
+        "Menu | Sunny Pizza & Pinsa, Stuttgart | Indian Pizza & Pinsa to Takeout",
     },
     {
       property: "og:title",
       content:
-        "Sunny Pizza & Pinsa, Stuttgart | Indian Pizza & Pinsa to Takeout",
+        "Menu | Sunny Pizza & Pinsa, Stuttgart | Indian Pizza & Pinsa to Takeout",
     },
     {
       property: "og:type",
@@ -21,18 +21,16 @@ export const meta: MetaFunction = () => {
     },
     {
       property: "og:description",
-      content:
-        "Combining the rich traditions of Italian cuisine with the fragrant spices of India, we specialise in a variety of classical favourites such as Pizza, Pinsa and Pasta, all with an Indian twist",
+      content: "Find our menu and prices here",
     },
     {
       tagName: "link",
       rel: "canonical",
-      href: "https://www.sunnypizzastuttgart.de",
+      href: "https://www.sunnypizzastuttgart.de/menu",
     },
     {
       name: "description",
-      content:
-        "Combining the rich traditions of Italian cuisine with the fragrant spices of India, we specialise in a variety of classical favourites such as Pizza, Pinsa and Pasta, all with an Indian twist",
+      content: "Find our menu and prices here",
     },
     {
       property: "og:image",
@@ -102,15 +100,50 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
+export default function Menu() {
   return (
     <div>
       <NavigationMenu />
-      <Header />
-      <main className="flex flex-col font-sans bg-gradient-to-br from-slate-100 to-slate-200 min-h-screen">
-        <HomeIntroSection className="my-12" />
-        <CtaSection />
-      </main>
+      <Header
+        title="Menu Sunny Pizza Stuttgart"
+        copy="Find our menu and prices here"
+        background="/assets/images/menu-header.jpg"
+      />
+      <section className="max-w-4xl mx-auto px-4 py-12 mt-8 text-muted-foreground">
+        <div className="prose prose-lg flex flex-col gap-4 text-lg font-light">
+          <p>
+            Welcome to our menu page. Here, you can find a link to our current
+            PDF menu, which showcases our delicious fusion of Italian and Indian
+            flavors.
+          </p>
+          <p>
+            Please note that while we strive to keep our online menu up-to-date,
+            prices and availability may vary. For the most accurate information,
+            we recommend checking our in-store menu during your visit.
+          </p>
+        </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto p-8 bg-blue-50 rounded-lg mb-12">
+        <h2 className="text-2xl font-bold mb-4 text-foreground">Our Menu</h2>
+        <p className="mb-4 text-muted-foreground">
+          Click the link below to view our current menu:
+        </p>
+        <AnchorLink
+          className="inline-block bg-blue-800 text-white py-2 px-4 rounded hover:bg-blue-700 hover:no-underline transition-colors"
+          href="/assets/menus/sunny-pizza-menu.pdf"
+          title="View our menu"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          View Menu (PDF)
+        </AnchorLink>
+        <p className="mt-4 text-sm text-muted-foreground">
+          Disclaimer: Prices and items on the PDF menu may not reflect current
+          offerings. Please refer to our in-store menu for the most up-to-date
+          information.
+        </p>
+      </section>
       <Footer />
     </div>
   );

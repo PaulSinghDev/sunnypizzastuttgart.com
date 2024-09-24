@@ -1,9 +1,24 @@
 import { AnchorLink } from "../ui/anchor-link";
 import { Icons } from "../ui/icons";
 
-export function Header() {
+export function Header({
+  title,
+  copy,
+  background,
+}: {
+  title?: string;
+  copy?: string;
+  background?: string;
+}) {
   return (
-    <header className="flex flex-col mt-nav min-h-[600px] before:bg-gradient-to-t from-slate-950 from-60% to-transparent to-90% p-4 pb-12 relative before:absolute before:w-full before:h-full before:contents-[''] bg-center bg-[url('/assets/images/pizza-header.jpeg')] bg-cover before:top-0 before:left-0 before:-z-1 before:opacity-70">
+    <header
+      className={`flex flex-col mt-nav min-h-[600px] before:bg-gradient-to-t from-slate-950 from-60% to-transparent to-90% p-4 pt-20 pb-12 relative before:absolute before:w-full before:h-full before:contents-[''] bg-center bg-cover before:top-0 before:left-0 before:-z-1 before:opacity-70`}
+      style={{
+        backgroundImage: `url(${
+          background || "/assets/images/pizza-header.jpeg"
+        })`,
+      }}
+    >
       <div className="z-1 p-8 mb-4 w-full relative max-w-content m-auto text-white flex flex-col gap-4 justify-center grow h-full">
         <div className="flex flex-col mt-auto items-center">
           <div className="p-3 bg-rose-800 rounded-full mb-4 shadow-md">
@@ -15,10 +30,10 @@ export function Header() {
             />
           </div>
           <h1 className="text-5xl text-pretty lg:text-6xl font-bold text-center text-shadow">
-            Sunny Pizza & Pinsa, Stuttgart
+            {title || "Sunny Pizza & Pinsa, Stuttgart"}
           </h1>
-          <p className="text-xl text-shadow-sm mt-2">
-            From India to Italy via Germany
+          <p className="text-xl text-shadow-sm mt-2 font-light">
+            {copy || "From India to Italy via Germany"}
           </p>
         </div>
         <div className="text-sm flex flex-col gap-2 items-center">

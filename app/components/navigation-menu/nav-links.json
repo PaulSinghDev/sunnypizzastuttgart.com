@@ -1,0 +1,17 @@
+[
+  {
+    "name": "About Us",
+    "href": "/about",
+    "title": "Learn more about us"
+  },
+  {
+    "name": "Menu",
+    "href": "/menu",
+    "title": "View our menu"
+  },
+  {
+    "name": "Contact",
+    "href": "/contact",
+    "title": "Get in touch"
+  }
+]
