@@ -130,7 +130,7 @@ export default function Menu() {
           Click the link below to view our current menu:
         </p>
         <AnchorLink
-          className="inline-block bg-blue-800 text-white py-2 px-4 rounded hover:bg-blue-700 hover:no-underline transition-colors"
+          className="inline-block bg-blue-800 text-white py-2 px-4 hover:bg-blue-700 hover:no-underline transition-colors rounded-full"
           href="/assets/menus/sunny-pizza-menu.pdf"
           title="View our menu"
           rel="noopener noreferrer"

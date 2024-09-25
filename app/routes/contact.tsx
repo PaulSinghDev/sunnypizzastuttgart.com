@@ -225,7 +225,7 @@ export default function Contact() {
                   <span>0711 - 2384 788</span>
                 </li>
                 <li className="flex items-center gap-2 mb-2">
-                  <Icons.phone size={20} />
+                  <Icons.mail size={20} />
                   <a
                     href="mailto:sunny-singh@hotmail.de"
                     className="text-blue-600 hover:underline"
@@ -343,7 +343,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 rounded-full"
               >
                 Send Message
               </button>

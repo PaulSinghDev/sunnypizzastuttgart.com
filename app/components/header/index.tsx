@@ -46,7 +46,7 @@ export function Header({
         </div>
         <div className="flex justify-center gap-4 mt-12">
           <AnchorLink
-            className="grow text-white min-w-[150px] max-w-[200px] bg-slate-600 inline-flex gap-2 items-center"
+            className="grow text-white min-w-[150px] max-w-[200px] bg-blue-600 inline-flex gap-2 items-center rounded-full"
             size={"md"}
             variant={"button"}
             href="/assets/menus/sunny-pizza-menu.pdf"
@@ -60,7 +60,7 @@ export function Header({
           <AnchorLink
             size={"md"}
             variant={"button"}
-            className="grow bg-slate-600 text-white min-w-[150px] max-w-[200px] inline-flex gap-2 items-center"
+            className="grow bg-blue-600 text-white min-w-[150px] max-w-[200px] inline-flex gap-2 items-center rounded-full"
             href="tel:07112384788"
             title="Call us"
           >

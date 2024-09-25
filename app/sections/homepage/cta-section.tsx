@@ -6,7 +6,7 @@ export function CtaSection({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "flex flex-col max-w-content mx-auto p-8 w-full justify-center items-center",
+        "flex flex-col max-w-content mx-auto p-8 w-full justify-center items-center mb-12",
         className
       )}
     >
@@ -29,7 +29,7 @@ export function CtaSection({ className }: { className?: string }) {
           </p>
           <div className="flex flex-wrap gap-4 justify-center mt-12">
             <AnchorLink
-              className="grow text-white min-w-[150px] max-w-[200px] bg-slate-800 inline-flex gap-2 items-center"
+              className="grow text-white min-w-[150px] max-w-[200px] bg-blue-800 inline-flex gap-2 items-center rounded-full"
               size={"md"}
               variant={"button"}
               href="/assets/menus/sunny-pizza-menu.pdf"
@@ -41,7 +41,7 @@ export function CtaSection({ className }: { className?: string }) {
             <AnchorLink
               size={"md"}
               variant={"button"}
-              className="grow bg-slate-800 text-white min-w-[150px] max-w-[200px] inline-flex gap-2 items-center"
+              className="grow bg-blue-800 text-white min-w-[150px] max-w-[200px] inline-flex gap-2 items-center rounded-full"
               href="tel:07112384788"
               title="Call us"
             >
