@@ -183,7 +183,7 @@ export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const [open, setOpen] = useState(false);
   const [isSent, setIsSent] = useState(false);
-  console.log(fetcher);
+
   useEffect(() => {
     if (
       fetcher.state === "idle" &&
@@ -343,7 +343,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 rounded-full"
+                className="bg-blue-600 text-white px-4 py-2 hover:bg-blue-700 rounded-full"
               >
                 Send Message
               </button>
