@@ -139,7 +139,7 @@ export async function action({ request }: ActionFunctionArgs) {
         // Send email
         const info = await transporter.sendMail({
           from: `"Sunny Pizza Contact Form" <${process.env.MAILER_USER}>`,
-          to: validatedData.email,
+          to: process.env.MAILER_RECEIVER,
           subject: `New Contact Form Submission: ${validatedData.subject}`,
           text: `
         Name: ${validatedData.name}
